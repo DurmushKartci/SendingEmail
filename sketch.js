@@ -25,5 +25,25 @@ function sendMail() {
 }
 
 function sure() {
-    return "00:52:08";
+    let saat = Math.floor(Math.random() * 2);
+    let dakika = Math.floor(Math.random() * 59);
+    let saniye = Math.floor(Math.random() * 59);
+
+    if (saniye.toString().length == 2)
+        saniyeText = saniye.toString()
+    else
+        saniyeText = "0" + saniye.toString();
+
+    if (dakika.toString().length == 2)
+        dakikaText = dakika.toString()
+    else
+        dakikaText = "0" + dakika.toString();
+
+    if (saat.toString().length == 2)
+        saatText = saat.toString()
+    else
+        saatText = "0" + saat.toString();
+    return saatText + ":" + dakikaText + ":" + saniyeText;
 }
+
+console.log(sure())
