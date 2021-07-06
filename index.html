@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_uyLVTmVps5T9THZorWCSm");
+        })();
+    </script>
+</head>
+
+<body>
+
+    <p>From:</p>
+    <input type="email" name="" value="durmusikartci@gmail.com" id="from">
+    <p>To:</p>
+    <input type="email" name="" value="durmus.kartci.ak.06@istek.k12.tr" id="to">
+    <p>Subject:</p>
+    <input type="text" name="" value="Send Mail" id="subject">
+    <p>Message:</p>
+    <input type="text" name="" value="Hello World" id="message">
+
+    <button onclick="sendMail()">Gönder</button>
+    <script src="sketch.js"></script>
+
+</body>
+
+</html>
